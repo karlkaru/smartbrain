@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-const Rank = ({ onInputChange, onButtonSubmit }) => {
+const Rank = ({name, entries}) => {
   return (
     <div>
         <div className='white f3'>
-            {'Karl, your current rank is...'}
-        </div>
-        <div className='white f1'>
-            {'#5'}
+          {`${name}, your current entry count is`}
+          <div className='white f1 '>
+            {entries}
+          </div>
         </div>
     </div>
   );
